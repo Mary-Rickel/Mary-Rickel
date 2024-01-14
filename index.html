@@ -1,9 +1,59 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>Mary Rickel's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center; /* Center align text for all elements */
+        }
 
+        h1 {
+            color: #333366;
+            margin-top: 50px;
+        }
+
+        p {
+            color: #666666;
+            font-size: 18px;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px; /* Rounded corners for image */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding a slight shadow to the image */
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Slightly darker green background on hover */
+        }
+    </style>
+</head>
 <body>
-  <h1>Mary Rickel</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <h1>Mary Rickel</h1>
+    <p>Welcome to my website!</p>
+    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Happy Ice Cream GIF" />
+    
+    <button onclick="displayMessage()">Click Me!</button>
 
+    <script>
+        function displayMessage() {
+            alert('Thanks for visiting my website!');
+        }
+    </script>
+</body>
 </html>
